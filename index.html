@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+       <div class="logo">Style Generator</div>
+       <div>
+        <ul class="nav-links">
+            <li><a href="#skin-tone">Skin Tone</a></li>
+            <li><a href="#skin-undertone">Skin Undertone</a></li>
+            <li><a href="#skin-type">Skin Type</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+       </div> 
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Categories</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#skin-tone" onclick="toggleMenu()">Skin Tone</a></li>
+            <li><a href="#skin-undertone" onclick="toggleMenu()">Skin Undertone</a></li>
+            <li><a href="#skin-type" onclick="toggleMenu()">Skin Type</a></li>
+            <li><a href="#resources" onclick="toggleMenu()">Our Resources</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="section__text">
+            <p class="section__text__p1">Welcome to the</p>
+            <h1 class="title">Style Generator!</h1>
+            <p class="section__text__p2">Find what fits you.</p>
+            <div class="btn-container">
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://forms.gle/tDxz8KADgL8Vukgd8'">Begin Survey</button>
+                </div>
+            </div>
+        </div>
+        <div class="back-img">
+            <style>
+                body {
+                  background-image: url('background_image.jpg');
+                }
+            </style>
+        </div>
+    </section>
+    <section id="skin-tone">
+        <p class="section__text__p1">What is your</p>
+        <h1 class="title">Skin Tone?</h1>
+        <div class="section-container">
+            <div class="skin-tone-details-container">
+                <div class="skin-tone-containers">
+                    <div class="details-container">
+                        <p>Pick your skin tone from the following option 
+                            [Pale, Fair, Medium, Olive, Tan, Brown, Dark brown, Dark], 
+                            then choose your skin undertone below to find the colors that looks best on you!</p>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://forms.gle/tDxz8KADgL8Vukgd8'">Begin Survey</button>
+                </div>
+            </div>
+        </div>
+        <img src="./arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skin-undertone'">
+    </section>
+    <section id="skin-undertone">
+        <p class="section__text__p1">What is your</p>
+        <h1 class="title">Skin Undertone?</h1>
+        <div class="skin-undertone-details-container">
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='https://forms.gle/tDxz8KADgL8Vukgd8'">Begin Survey</button>
+            </div>
+            <div class="skin-tone-containers">
+                <div class="details-container">
+                    <h3>Cool Undertones</h3>
+                    <p1>Read about what colors suit you best!</p1>
+                    <div class="btn-container">
+                        <button class="btn btn-color-3" onclick="location.href='./Cool Undertones.pdf'">Color Guide</button>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3>Warm Undertones</h3>
+                    <p2>Read about what colors suit you best!</p2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-3" onclick="location.href='./Warm Undertones.pdf'">Color Guide</button>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3>Neutral Undertones</h3>
+                    <p3>Read about what colors suit you best!</p3>
+                    <div class="btn-container">
+                        <button class="btn btn-color-3" onclick="location.href='./Neutral Undertones.pdf'">Color Guide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skin-type'">
+    </section>
+    <section id="skin-type">
+        <p class="section__text__p1">What is your</p>
+        <h1 class="title">Skin Type?</h1>
+        <div class="skin-type-details-container">
+            <div class="skin-tone-containers">
+            <div class="details-container color-container">
+                <h2 class="skin-type-sub-title skin-undertone-title">Skin Type Test</h2>
+                <p1>Don't know your skin type? Follow these easy steps to determine
+                    if you have a normal, dry, oily, or combination skin type! 
+                </p1>
+                <ol type="1">
+                    <li>Wash your face with lukewarm water.</li>
+                    <li>Wait an hour.</li>
+                    <li>Time to look at your skin!</li>
+                </ol>
+            </div>
+            <div class="details-container color-container">
+                <h2 class="skin-type-sub-title skin-undertone-title">What to Look For:</h2>
+                <p2> 
+                    <b>Normal Skin Type:</b> Your face will appear smooth with no dry or oily/shiny patches.
+                    <br><b>Dry Skin Type:</b> Your face will feel tight and have dry patches. 
+                    <br><b>Oily Skin Type:</b> Your face will appear shinier and have larger pores. 
+                    <br><b>Combination Skin Type:</b> Your face will appear shinier on your forehead and nose while
+                    having normal-to-dry skin everywhere else. 
+                </p2>
+            </div>
+            <div class="details-container color-container">
+                <h2 class="skin-type-sub-title skin-undertone-title">Recommended Products and Brands</h2>
+                <p1>Click on the links to see recommended products and brands for your skin type!
+                </p1>
+                <div class="btn-container">
+                    <button class="btn btn-color-3 project-btn" 
+                    onclick="location.href='./Dry Skin Type.pdf'">Dry Skin Type</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-3 project-btn" 
+                    onclick="location.href='./Oily Skin Type.pdf'">Oily Skin Type</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-3 project-btn" 
+                    onclick="location.href='./Combination Skin Type.pdf'">Combination Skin Type</button>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-3 project-btn" 
+                    onclick="location.href='./Some Brands.pdf'">Some Brands!</button>
+                </div>
+            </div>
+           </div>
+        </div>
+        <img src="./arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#resources'">
+    </section>
+    <section id="resources">
+        <p class="section__text__p1">Our</p>
+        <h1 class="title">Resources</h1>
+        <p>**Disclaimer**We are not professionals and the information on this site are recommendations only!</p>
+        <div class="resources-upper-container">
+            <div class="resources-container">
+                <p>Curology Team. (2023, July 7) <i>How to determine your skin type</i>. Curology.</p>
+            </div>
+            <div class="resources-container">
+                <p>Hyram. (2019, November 6). <i>My winter skin care routine for dry skin!</i>[Video]. Youtube. https://www.youtube.com/watch?v=axnH1r3ffsk</p>
+            </div>
+            <div class="resources-container">
+                <p>Hyram. (2023, May 13). <i>The ultimate q&a for oily skin - your questions answered</i>[Video]. Youtube. https://www.youtube.com/watch?v=IPY4nWa_czo</p>
+            </div>
+            <div class="resources-container">
+                <p>Hyram. (2019, May 21). <i>My skin care routine for combination skin!</i>[Video]. Youtube. https://www.youtube.com/watch?v=3uYwIwFhBiM</p>
+            </div>
+            <div class="resources-container">
+                <p>Luminita, T. <i>Skin tone chart - how to determine your skin type, color and undertones</i>. The Mind Blown
+                    https://www.themindblown.com/skin-tone-chart/</p>
+            </div>
+            <div class="resources-container">
+                <p>Colorwise.me. <i>Welcome</i>. Colorwise.me. https://colorwise.me/</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#skin-tone">Skin Tone</a></li>
+                    <li><a href="#skin-undertone">Skin Undertone</a></li>
+                    <li><a href="#skin-type">Skin Type</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
